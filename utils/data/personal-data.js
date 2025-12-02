@@ -3,7 +3,7 @@ export const personalData = {
   profile: '/profile.jpg',
   designation: "Software Developer",
   description: "My name is Salim Sk, and I am a professional and enthusiastic programmer with a passion for learning and problem-solving. I am a quick learner with a strong self-learning attitude, always exploring new technologies to expand my skill set. I specialize in MERN stack development and Flutter, which allows me to build scalable web and mobile applications. I am passionate about creating open and accessible web experiences and strive to deliver high-quality, user-centric solutions. My core skills are centered around JavaScript and cross-platform mobile development. I am available for job opportunities that align with my skills and passion.",
-  email: 'sksalim.sheikh786@gmail.com',
+  email: 'salim.cse.engineer@gmail.com',
   phone: '+91 6297231735',
   address: 'Murshidabad, West Bengal, India - 742302',
   github: 'https://github.com/devsalimsk',

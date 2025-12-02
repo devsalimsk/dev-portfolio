@@ -6,6 +6,7 @@ import Experience from "./components/homepage/experience";
 import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
+import AnimationWrapper from "./components/helper/animation-wrapper";
 
 async function getData() {
   const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
@@ -27,12 +28,24 @@ export default async function Home() {
   return (
     <>
       <HeroSection />
-      <AboutSection />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Education />
-      <ContactSection />
+      <AnimationWrapper>
+        <AboutSection />
+      </AnimationWrapper>
+      <AnimationWrapper animation="scale-in">
+        <Experience />
+      </AnimationWrapper>
+      <AnimationWrapper animation="fade-in">
+        <Skills />
+      </AnimationWrapper>
+      <AnimationWrapper>
+        <Projects />
+      </AnimationWrapper>
+      <AnimationWrapper animation="scale-in">
+        <Education />
+      </AnimationWrapper>
+      <AnimationWrapper animation="fade-up">
+        <ContactSection />
+      </AnimationWrapper>
     </>
   )
 };
